@@ -1,0 +1,8 @@
+Gymnasium: This entity represents each gymnasium owned by the gym chain, and has attributes such as a unique identifier, name, address, and phone number. A gymnasium can have many sessions, and a session can only belong to one gymnasium.
+Session: This entity represents a workout session that members can register for, and has attributes such as a unique identifier, sport type, schedule, and maximum capacity. A session can have many members, and a member can register for many sessions. A session can also have many coaches, and a coach can lead many sessions.
+Member: This entity represents each member who has registered with the gym chain, and has attributes such as a unique identifier, last name, first name, address, date of birth, and gender. A member can register for many sessions, and a session can have many members.
+Coach: This entity represents each coach who leads a workout session, and has attributes such as a unique identifier, last name, first name, age, and specialty. A coach can lead many sessions, and a session can have up to two coaches.
+The relationships between the entities are represented by the lines connecting them. For example, a gymnasium has many sessions, so the Gymnasium entity has a "one-to-many" relationship with the Session entity, represented by the line with a crow's foot symbol pointing from Gymnasium to Session. Similarly, a session can have many coaches, so the Session entity has a "many-to-many" relationship with the Coach entity, represented by the line with two crow's foot symbols.
+
+
+
